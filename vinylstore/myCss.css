@@ -1,0 +1,71 @@
+.error {color: #FF0000;}
+.mt-1 {
+  margin-top: 1 !important;//Ο κανόνας !important στο CSS χρησιμοποιείται για να προσθέσει μεγαλύτερη σημασία
+// σε μια ιδιότητα αξία από το κανονικό.Στην πραγματικότητα, εάν χρησιμοποιήσετε τον κανόνα !important,
+// θα παρακάμψει ΟΛΟΥΣ τους προηγούμενους κανόνες στυλ για τη συγκεκριμένη ιδιότητα σε αυτό το στοιχείο
+}
+.bottomright {
+    position: fixed;//παραμένει πάντα στην ίδια θέση, ακόμα κι αν η σελίδα έχει κύλιση. Οι ιδιότητες πάνω, δεξιά, κάτω και αριστερά χρησιμοποιούνται για την τοποθέτηση του στοιχείου.
+    bottom: 0;
+    right: 0;
+  }
+.topleft {
+    position: absolute;//Ένα στοιχείο με θέση: απόλυτη; είναι τοποθετημένο σε σχέση με τον πλησιέστερο
+    // τοποθετημένο πρόγονο (αντί για τοποθετημένο σε σχέση με το παράθυρο προβολής, όπως σταθερό).
+    // Ωστόσο εάν ένα στοιχείο απόλυτο τοποθετημένο δεν έχει τοποθετημένους προγόνους, χρησιμοποιεί το σώμα του 
+    //εγγράφου και μετακινείται μαζί με την κύλιση της σελίδας.
+    top: 4px;
+    left: 4px;
+    z-index: -1;// Η ιδιότητα z-index καθορίζει τη σειρά στοίβας ενός στοιχείου.
+                //Ένα στοιχείο με μεγαλύτερη σειρά στοίβας βρίσκεται πάντα μπροστά από ένα στοιχείο με χαμηλότερη σειρά στοίβας.
+                //background-image:none;
+  }
+body {
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+     background-size: cover;
+}
+
+.panel-default {
+ opacity: 0.9;//καθορίζει την αδιαφάνεια/διαφάνεια ενός στοιχείου.
+ margin-top:30%;
+}
+.form-group.last {
+ margin-bottom:0px;
+}
+.error {color: #FF0000;}
+.valid {color: green;}
+.myJustify {
+    text-align: justify;
+}
+.myCenter{
+    text-align: center;
+}
+.myRight{
+    text-align: right;
+}
+.myTitle{
+    font-size:24px;
+    text-align: center;
+    font-weight: bold;
+}
+.mySubTitle{
+    font-size:20px;
+    text-align: center;
+    font-weight: bold;
+}
+.myEvent{
+    font-size:18px;
+}
+.collapse1{
+overflow-y:scroll;//gia to scroll bar
+height:200px;
+}
